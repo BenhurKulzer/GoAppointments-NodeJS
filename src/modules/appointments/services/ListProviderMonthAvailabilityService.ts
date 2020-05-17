@@ -37,7 +37,7 @@ class ListProviderMonthAvailabilityService {
     const numberOfDaysInMonth = getDaysInMonth(new Date(year, month - 1));
 
     const eachDayArray = Array.from(
-      { lenght: numberOfDaysInMonth },
+      { length: numberOfDaysInMonth },
       (_, index) => index + 1,
     );
 
@@ -48,7 +48,7 @@ class ListProviderMonthAvailabilityService {
 
       return {
         day,
-        availability: appointmentsInDay.length < 10,
+        available: appointmentsInDay.length < 10,
       };
     });
 
