@@ -43,8 +43,6 @@ class ListProviderAppointmentsService {
         },
       );
 
-      console.log('Retornou do banco');
-
       await this.cacheProvider.save(cacheKey, appointments);
     }
 
